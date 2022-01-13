@@ -13,10 +13,25 @@ function NavBar() {
     <Navbar
       bg="transparent"
       expand={false}
-      style={{ position: "relative", width: "100vw", height: "10%" }}
+      style={{
+        position: "relative",
+        width: "100vw",
+        height: "10%",
+        padding: "2vh 4vw",
+      }}
     >
-      <Container fluid>
-        <Navbar.Toggle aria-controls="offcanvasNavbar" />
+      <Container
+        fluid
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          justifyContent: "flex-end",
+        }}
+      >
+        <Navbar.Toggle
+          aria-controls="offcanvasNavbar"
+          style={{ backgroundColor: "white" }}
+        />
         <Navbar.Offcanvas
           id="offcanvasNavbar"
           aria-labelledby="offcanvasNavbarLabel"
@@ -24,7 +39,7 @@ function NavBar() {
         >
           <Offcanvas.Header closeButton>
             <Offcanvas.Title id="offcanvasNavbarLabel">
-              Automatșii au Talent
+              Automatiștii au Talent
             </Offcanvas.Title>
           </Offcanvas.Header>
           <Offcanvas.Body>
