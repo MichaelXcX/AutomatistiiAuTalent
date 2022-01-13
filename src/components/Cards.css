@@ -1,0 +1,13 @@
+.card-dim {
+    width: 20vw;
+    height: 20vh;
+    margin: 0 1vw;
+}
+
+.bg-light-green {
+    background-color: #4cd137;
+}
+
+.full-width {
+    width: 100%;
+}

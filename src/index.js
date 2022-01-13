@@ -1,17 +1,31 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
+
+import { Image } from "react-bootstrap";
+import NavBar from "./components/Navbar";
+import Cards from "./components/Cards";
+import background from "./img/theater-stage-with-red-curtains-vector.jpg";
+import Logo from "./img/Logo.png";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+  <div
+    className="d-flex flex-column align-items-center "
+    style={{
+      width: "100vw",
+      height: "100vh",
+      margin: "0",
+      padding: "0",
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+      backgroundImage: `url("${background}")`,
+      backgroundSize: "cover",
+      backgroundPosition: "center center",
+
+      justifyContent: "space-between",
+    }}
+  >
+    <NavBar />
+    <Image src={Logo} alt="#" height="50%" width="100%" fluid />
+    <Cards />
+  </div>,
+  document.getElementById("root")
+);
