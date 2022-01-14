@@ -51,7 +51,7 @@ function NavBar() {
                 Activitati sportive
               </NavDropdown.Item>
               <NavDropdown.Item href="https://www.youtube.com/watch?v=ITU5Dd7zhbE&ab_channel=iUmor">
-                Alter
+                Altele
               </NavDropdown.Item>
 
               <NavDropdown.Divider />
@@ -62,7 +62,7 @@ function NavBar() {
               <Image
                 src={insta}
                 style={{ position: "relative", width: "2rem", height: "2rem" }}
-              />{" "}
+              />
               Instagram
             </Nav.Link>
           </Nav>

@@ -115,7 +115,12 @@ function Flex() {
               </div>
             </div>
           </Card.Text>
-          <Button variant="primary">Link</Button>
+          <Button
+            variant="primary"
+            href="https://www.youtube.com/watch?v=jvFgR7IIP_c&ab_channel=GleyfyBrauly"
+          >
+            Link
+          </Button>
         </Card.Body>
       </Card>
     </Container>
