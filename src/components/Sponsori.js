@@ -20,14 +20,15 @@ function Sponsori() {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        justifyContent: "space-between",
+        justifyContent: "center",
         borderBox: "border-box",
       }}
     >
       <h1>Sponsori: </h1>
       <br />
-      <Container>
+      <Container style={{ position: "relative", flexDirection: "row" }}>
         <Container
+          className="container-card"
           style={{
             display: "flex",
             flexDirection: "column",
@@ -35,13 +36,14 @@ function Sponsori() {
         >
           <Image
             src={vodafone}
-            style={{ position: "relative", width: "50vw", height: "30vh" }}
+            style={{ position: "relative", width: "30vw", height: "30vh" }}
             fluid
           ></Image>
+          <h1>Partener Oficial</h1>
           <br />
-          <h1>Partener oficial</h1>
         </Container>
         <Container
+          className="container-card"
           style={{
             display: "flex",
             flexDirection: "column",
@@ -49,12 +51,14 @@ function Sponsori() {
         >
           <Image
             src={worldclass}
-            style={{ position: "relative", width: "50vw", height: "40vh" }}
+            style={{ position: "relative", width: "20vw", height: "40vh" }}
             fluid
           ></Image>
-          <h1>Partener oficial</h1>
+          <h1>Partener Premium</h1>
+          <br />
         </Container>
         <Container
+          className="container-card"
           style={{
             display: "flex",
             flexDirection: "column",
@@ -62,11 +66,12 @@ function Sponsori() {
         >
           <Image
             src={magie}
-            style={{ position: "relative", width: "40vw", height: "30vh" }}
+            style={{ position: "relative", width: "20vw", height: "20vh" }}
             fluid
           ></Image>
+
+          <h1>Partener</h1>
           <br />
-          <h1>Partener oficial</h1>
         </Container>
       </Container>
     </Container>
